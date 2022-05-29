@@ -19,9 +19,9 @@ node('workers'){
         }
     }
 
-    stage('Security Tests'){
-        imageTest.inside('-u root:root'){
-          sh 'nancy sleuth -p /go/src/github/olivier/movies-parser/Gopkg.lock'
-        }
-    }
+    //stage('Security Tests'){
+    //    imageTest.inside('-u root:root'){
+    //      sh 'nancy sleuth -p /go/src/github/olivier/movies-parser/Gopkg.lock'
+    //    }
+    //}
 }
