@@ -21,7 +21,7 @@ node('workers'){
 
     stage('Security Tests'){
         imageTest.inside('-u root:root'){
-          sh 'nancy /go/src/github/olivier/movies-parser/Gopkg.lock'
+          sh 'nancy sleuth -p /go/src/github/olivier/movies-parser/Gopkg.lock'
         }
     }
 }
