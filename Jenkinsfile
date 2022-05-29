@@ -15,7 +15,7 @@ node('workers'){
 
     stage('Unit Tests'){
         imageTest.inside{
-          sh 'gotest'
+          sh 'go test'
         }
     }
 
